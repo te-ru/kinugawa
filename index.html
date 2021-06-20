@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日は鬼怒川</title>
+    <meta name="description" content="鬼怒川の情報を発信します">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="wrap">
 
+    <header id="top" role="banner" class="header index">
+      <p class="logo"><a href="index.html"><img src="images/logo.jpeg" alt="鬼怒川雅" class="logo__img" /></a></p>
+      <h1 class="title">鬼怒川の旅(仮)</h1>
+      <div class="menu">
+        <i class="menu__button"  
+        onclick="document.querySelector('body').classList.toggle('menu-open');"> 
+          <span></span>
+          <span></span>
+          <span></span>
+        </i>
+        <div class="menu__inner" style="display: none;">
+          <nav class="nav" role="navigation">
+            <ul>
+              <li>鬼怒川ってどんなとこ</li>
+              <li>スポット</li>
+              <li>日帰り温泉</li>
+              <li>プラン</li>
+              <li>食事</li>
+              <li>お土産</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <div class="mainvisWrap">
+        <div>
+          <!-- Slider main container -->
+          <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="images/kinugawa4.jpeg" alt="">
+              <div class="swiper__title">鬼怒川</div>
+            </div>
+            <div class="swiper-slide"><img src="images/kinugawa1.jpeg" alt="">
+              <div class="swiper__title">鬼怒川</div>
+            </div>
+            <div class="swiper-slide"><img src="images/kinugawa2.jpeg" alt="">
+              <div class="swiper__title">鬼怒川</div>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+  
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div> -->
+          <!-- <div class="swiper-button-next"></div> -->
+  
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="information content">
+        <h2 class="information__title">鬼怒川の情報</h2>
+        <p class="information__titleE">information</p>
+        <div class="news">
+          <h2></h2>
+          <ul class="news__list">
+            <li>
+              <a href="">
+                <time>2021.06.09</time>
+                <p class="text">夏祭り開催のお知らせ</p>
+                <p class="tag">お知らせ</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <time>2021.06.09</time>
+                <p class="text">第１回</p>
+                <p class="tag">お知らせ</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <time>2021.06.09</time>
+                <p class="text">ご案内</p>
+                <p class="tag">お知らせ</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <time>2021.06.09</time>
+                <p class="text">動画を投稿しました</p>
+                <p class="tag">更新情報</p>
+              </a>
+            </li>
+          </ul>
+          <p class="btn">
+            <a href="">
+              一覧を見る
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="cont__list">
+        <ul>
+          <li class="cont">
+            <a href="">
+              <img src="images/logo.jpeg" alt="鬼怒川って">
+            </a>
+          </li>
+          <li class="cont">
+            <a href="">
+              <img src="images/logo.jpeg" alt="コース">
+            </a>
+          </li>
+          <li class="cont">
+            <a href="">
+              <img src="images/logo.jpeg" alt="スポット">
+            </a>
+          </li>
+          <li class="cont">
+            <a href="">
+              <img src="images/logo.jpeg" alt="食事">
+            </a>
+          </li>
+          <li class="cont">
+            <a href="">
+              <img src="images/logo.jpeg" alt="日帰り温泉">
+            </a>
+          </li>
+          <li class="cont">
+            <a href="">
+              <img src="images/logo.jpeg" alt="お土産">
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      
+     
+      
+
+
+    </main>
+
+    <footer id="footer" role="contentinfo">
+      <div class="siteLink"></div>
+      <div class="sosialBtn"></div>
+      <p><small>&copy; 2021 teru</small></p>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="scripts/libs/main.js"></script>
+</body>
+</html>
