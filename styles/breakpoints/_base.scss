@@ -309,11 +309,14 @@ footer {
        display: flex;
        flex-direction: column;
        align-self: stretch;
-       padding: 0;
+       padding: 0 0 --1.9%;
+       margin-left: 1%;
+       margin-bottom: 0.5em;
   
        & > h3 {
          position: relative;
-         margin-top: -2.6em;
+        //  margin-top: -2.6em;
+         margin-top: -3.5em;
          padding: 0.8em;
          font-weight: bold;
          color: $cWhite;
@@ -324,6 +327,7 @@ footer {
   
        & > div {
         //  background-color: green;
+        margin-top: -1.5em;
          & > ul {
            position: absolute;
            top: 1em;
@@ -333,7 +337,7 @@ footer {
   
            & > li {
             padding: 0.8em 0.8em;
-            color: $cWhite;
+            color: b;
             font-size: 0.8em;
             line-height: 1em;
            }
@@ -346,7 +350,6 @@ footer {
           order: -1;
           & .thumb {
             position: relative;
-            display: block;
             width: 100%;
             margin: 0;
             padding: 66.66% 0 0 0;

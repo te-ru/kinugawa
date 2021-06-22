@@ -320,18 +320,24 @@ footer > p {
           flex-direction: column;
   -ms-flex-item-align: stretch;
       align-self: stretch;
-  padding: 0;
+  padding: 0 1.9%;
+  margin-left: 1%;
+  margin-bottom: 0.5em;
 }
 
 .result__list .wrap > section > h3 {
   position: relative;
-  margin-top: -2.6em;
+  margin-top: -3.5em;
   padding: 0.8em;
   font-weight: bold;
   color: white;
   text-overflow: ellipsis;
   overflow: hidden;
   z-index: 1;
+}
+
+.result__list .wrap > section > div {
+  margin-top: -1.5em;
 }
 
 .result__list .wrap > section > div > ul {
@@ -344,7 +350,7 @@ footer > p {
 
 .result__list .wrap > section > div > ul > li {
   padding: 0.8em 0.8em;
-  color: white;
+  color: b;
   font-size: 0.8em;
   line-height: 1em;
 }
@@ -361,7 +367,6 @@ footer > p {
 
 .result__list .wrap > section > figure .thumb {
   position: relative;
-  display: block;
   width: 100%;
   margin: 0;
   padding: 66.66% 0 0 0;
