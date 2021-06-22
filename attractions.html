@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鬼怒川の旅</title>
+    <meta name="description" content="鬼怒川の情報を発信します">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <header id="top" role="banner" class="header index">
+      <p class="logo"><a href="index.html"><img src="images/logo.jpeg" alt="鬼怒川雅" class="logo__img" /></a></p>
+      <h1 class="title">鬼怒川の旅(仮)</h1>
+      <div class="menu">
+        <i class="menu__button"  
+        onclick="document.querySelector('body').classList.toggle('menu-open');"> 
+          <span></span>
+          <span></span>
+          <span></span>
+        </i>
+        <div class="menu__inner" style="display: none;">
+          <nav class="nav" role="navigation">
+            <ul>
+              <li>鬼怒川ってどんなとこ</li>
+              <li>スポット</li>
+              <li>日帰り温泉</li>
+              <li>プラン</li>
+              <li>食事</li>
+              <li>お土産</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+        <div class="head">
+            <div class="wrap">
+                <h2>鬼怒川の観光スポットを探す</h2>
+                <p>カテゴリーやエリアなどの条件から行きたいスポットを探せます。</p>
+            </div>
+        </div>
+        <div class="search">
+            <div class="wrap">
+                <div class="serch__select">
+                    <ul class="serch__menu">
+                        <li>カテゴリを選択</li>
+                        <li>
+                            <input type="text" id="serch" value placeholder ="キーワードを入力">
+                        </li>
+                    </ul>
+                    <button type="submit">
+                        <span>検索</span>
+                    </button>
+                </div>
+                <div id="serch__detail">
+                    <div id="serch__category" style="display: none;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="result__stats">
+            <div class="wrap">
+                <p><span>1</span>
+                    件ありました
+                </p>
+                <div id="item__order">
+                    <dt>並び順</dt>
+                    <dd>人気順</dd>
+                    <dd>更新順</dd>
+                </div>
+            </div>
+        </div>
+        <div id="result__list">
+            <section>
+                <h3>日光江戸村</h3>
+                <div>
+                    <ul>
+                        <li>鬼怒川</li>
+                    </ul>
+                    <p>江戸時代にタイムスリップ</p>
+                    <a href=""></a>
+                </div>
+                <figure>
+                    <div class="lazyloaded">
+                        <img src="images/logo.jpeg" alt="日光江戸村" class="lazyloaded">
+                    </div>
+                </figure>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer" role="contentinfo">
+      <div class="siteLink"></div>
+      <div class="sosialBtn"></div>
+      <p><small>&copy; 2021 teru</small></p>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="scripts/libs/main.js"></script>
+</body>
+</html>
