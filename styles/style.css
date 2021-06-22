@@ -290,6 +290,103 @@ footer > p {
   transition: opacity 0.3s ease 1s, transform 0.3s ease 1s, -webkit-transform 0.3s ease 1s;
 }
 
+.result__list {
+  margin-top: 2em;
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  display: block;
+  line-height: inherit;
+}
+
+.result__list .wrap {
+  width: calc(100% - 2em);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.result__list .wrap > section {
+  width: calc(50% - 0.5em);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  padding: 0;
+}
+
+.result__list .wrap > section > h3 {
+  position: relative;
+  margin-top: -2.6em;
+  padding: 0.8em;
+  font-weight: bold;
+  color: white;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.result__list .wrap > section > div > ul {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  list-style: none;
+  z-index: 1;
+}
+
+.result__list .wrap > section > div > ul > li {
+  padding: 0.8em 0.8em;
+  color: white;
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.result__list .wrap > section > div > ul .kinugawa {
+  background-color: darkkhaki;
+}
+
+.result__list .wrap > section > figure {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.result__list .wrap > section > figure .thumb {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 66.66% 0 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+}
+
+.result__list .wrap > section > figure .thumb > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: inherit;
+     object-fit: inherit;
+  -o-object-position: inherit;
+     object-position: inherit;
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  vertical-align: top;
+}
+
 @media (min-width: 480px) {
   header {
     color: yellow;
