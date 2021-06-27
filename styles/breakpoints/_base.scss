@@ -160,7 +160,7 @@ main {
             & >a {
               background-color: transparent;
               color: $cBlack;
-
+             
 
               & >time {
                 font-size: 9px;
@@ -178,6 +178,8 @@ main {
             text-overflow: ellipsis;
             display: block;
             margin-inline-end: 1em;
+            padding-left: 18px;
+
             // color: red;
           }
           & .tag {

@@ -186,6 +186,7 @@ main .information .news .news__list .text {
   display: block;
   -webkit-margin-end: 1em;
           margin-inline-end: 1em;
+  padding-left: 18px;
 }
 
 main .information .news .news__list .tag {
